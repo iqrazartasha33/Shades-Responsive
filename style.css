@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(170, 170, 253);
+}
+
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: -120px;
+
+}
+
+.main h1 {
+  margin-left: -7%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+ul:hover {
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+#button {
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue;
+  font-weight: bold;
+  width: 10%;
+  height: 35px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 10%;
+  height: 35px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 140px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 28px;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 16px;
+  margin-top: 10px;
+}
+
+.container4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: none;
+  size: 220px;
+  margin-top: 10px;
+
+}
+
+.container4 #button1 {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 20px;
+  width: 140px;
+  height: 35px;
+}
+
+.container5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 10px;
+  margin-top: 10px;
+}
+
+.container6 {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fa {
+  margin-left: 190px;
+}
+
+/* FOR MOBILES */
+
+@media screen and (max-width:430px) {
+  main {
+    flex-direction: column;
+  }
+
+  ul {
+    /* flex-direction: column; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .main h1 {
+    margin-left: 2%;
+    font-size: 20px;
+  }
+
+  .main ul li {
+    font-size: 1.2rem;
+    display: none;
+
+  }
+
+  #button {
+    width: 35%;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 14px;
+  }
+
+  #button:hover {
+    width: 35%;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgb(170, 170, 253);
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+  }
+
+  .container2 h1 {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .container3 p {
+    font-size: 0.8em;
+    padding: 10px;
+
+  }
+
+  .container6 {
+    flex-direction: column;
+  }
+
+  .container4 #input {
+    width: 30%;
+    margin-right: 5px;
+  }
+
+  .container4 #button1 {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 20px;
+    width: 90px;
+    height: 30px;
+
+  }
+
+  .div1 {
+    padding-bottom: 30px;
+  }
+
+  .div2 {
+    padding-bottom: 30px;
+  }
+
+  .div3 {
+    padding-bottom: 30px;
+  }
+}
+
+/* FOR TABLET */
+
+@media screen and (min-width:431px) and (max-width:768px) {
+
+  main {
+    flex-direction: column;
+
+  }
+
+  ul {
+    /* flex-direction: column; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .main h1 {
+    margin-left: 2%;
+  }
+
+  ul li {
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  #button {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+
+  #button:hover {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+
+  .container2 h1 {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .container3 p {
+    font-size: 0.8em;
+    padding: 10px;
+
+  }
+
+  .container6 {
+    flex-direction: column;
+  }
+
+  .container4 #input {
+    width: 30%;
+    margin-right: 5px;
+  }
+
+  .container4 #button1 {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 20px;
+    width: 90px;
+    height: 30px;
+
+  }
+
+  .div1 {
+    padding-bottom: 30px;
+  }
+
+  .div2 {
+    padding-bottom: 30px;
+  }
+
+  .div3 {
+    padding-bottom: 30px;
+  }
+}
+
+/* FOR MAX BOOKS */
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+  .main {
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+  ul {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-left: 30px;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  #button {
+    width: 15%;
+    max-width: none;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    margin-left: 30px;
+  }
+
+  #button:hover {
+    width: 15%;
+    font-size: 0.9rem;
+  }
+
+  .container2 h1 {
+    font-size: 2.3rem;
+    padding: 15px;
+  }
+
+  .container3 p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .container6 {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .container4 #input {
+    width: 30%;
+  }
+
+  .container5 p {
+    margin-top: 10px;
+  }
+
+  .div1 {
+    padding-bottom: 30px;
+  }
+
+  .div2 {
+    padding-bottom: 30px;
+  }
+
+  .div3 {
+    padding-bottom: 30px;
+  }
+}
+
+/* FOR LAPTOP AND PC'S */
+
+/* @media screen and (min-width:1025px) and (max-width:2200px) {
+  .main {
+    text-align: center;
+    /* flex-direction: row; 
+  }
+
+  .main h1 {
+    font-size: 2rem;
+    margin-left:2px ;
+  }
+
+  ul {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-left: 30px;
+
+  }
+
+  ul li {
+    font-size: 1.2rem;
+  }
+
+  #button {
+    width: 20%;
+    max-width: none;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    margin-left: 30px;
+  }
+
+  #button:hover {
+    width: 15%;
+    font-size: 0.9rem;
+  }
+
+  .container2 h1 {
+    font-size: 2.3rem;
+    padding: 15px;
+  }
+
+  .container3 p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .container6 {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .container4 #input {
+    width: 30%;
+  }
+
+  .container5 p {
+    margin-top: 10px;
+  }
+
+  .div1 {
+    padding-bottom: 30px;
+  }
+
+  .div2 {
+    padding-bottom: 30px;
+  }
+
+  .div3 {
+    padding-bottom: 30px;
+  }
+} */
